@@ -1,6 +1,11 @@
 #!/bin/bash
 # Description: Script to update ollama, add environment, restart, and check.
 
+# Exposing Ollama to the network
+OLLAMA_HOST="127.0.0.1:11434"
+# or
+# OLLAMA_HOST configurable via env
+
 # Update Ollama
 echo "Updating Ollama..."
 curl -fsSL https://ollama.com/install.sh | sh
@@ -10,8 +15,8 @@ ollama --version
 echo "Resetting ollama.service..."
 
 # Ensure Environment line exists or append it
-if ! grep -q 'Environment="OLLAMA_HOST=127.0.0.1:11434"' /etc/systemd/system/ollama.service; then
-    sudo sed -i '/Environment=/a\Environment="OLLAMA_HOST=127.0.0.1:11434"' /etc/systemd/system/ollama.service
+if ! grep -q 'Environment="OLLAMA_HOST=$OLLAMA_HOST"' /etc/systemd/system/ollama.service; then
+    sudo sed -i '/Environment=/a\Environment="OLLAMA_HOST=$OLLAMA_HOST"' /etc/systemd/system/ollama.service
 fi
 
 # Reload the systemd daemon to pick up changes
@@ -30,4 +35,4 @@ sudo systemctl status ollama.service --no-pager
 
 # Test connection
 echo "Testing Ollama connection..."
-curl -s http://127.0.0.1:11434 || echo "Failed to connect to Ollama"
+curl -s http://$OLLAMA_HOST || echo "Failed to connect to Ollama"
