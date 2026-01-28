@@ -1,6 +1,6 @@
 #!/bin/bash
 # Adapted for MacOS
-# Original code by: Matt Williams @technovangelist
+# Inspired by Matt Williams @technovangelist
 
 # Extract model names from ollama ls command excluding the first row (header)
 model_names=$(ollama ls | tail -n +2 | cut -d' ' -f1)
