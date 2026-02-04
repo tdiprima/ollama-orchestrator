@@ -8,7 +8,7 @@ def upload_file(token, file_path):
     url = "http://localhost:3000/api/v1/files/"
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
     files = {"file": open(file_path, "rb")}
-    response = requests.post(url, headers=headers, files=files)
+    response = requests.post(url, headers=headers, files=files, timeout=30)
     files["file"].close()  # Close the file after upload
     return response.json()
 
@@ -31,7 +31,7 @@ def upload_files_in_directory(token, directory_path):
             print(f"Skipping {file_path}, not a file.")
 
 
-# Example usage:
-token = ""
+# TODO:
+token = ""  # noseq B105
 directory_path = "/path/to/your/dir"
 upload_files_in_directory(token, directory_path)

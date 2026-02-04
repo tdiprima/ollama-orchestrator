@@ -1,3 +1,4 @@
+# noseq B105
 # https://docs.openwebui.com/api/#adding-files-to-knowledge-collections
 import os
 
@@ -8,8 +9,8 @@ def add_file_to_knowledge(token, knowledge_id, file_id):
     url = f"http://localhost:3000/api/v1/knowledge/{knowledge_id}/file/add"
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
     data = {"file_id": file_id}
-    response = requests.post(url, headers=headers, json=data)
-    return response.json()
+    # Return the response in JSON
+    return (requests.post(url, headers=headers, json=data, timeout=30)).json()
 
 
 def process_files(token, knowledge_id, directory_path):
@@ -20,7 +21,7 @@ def process_files(token, knowledge_id, directory_path):
             print(f"Processed {file_id}: {response}")
 
 
-# Usage
+# TODO:
 token = ""
 knowledge_id = ""
 directory_path = "/var/lib/docker/volumes/open-webui/_data/uploads"
