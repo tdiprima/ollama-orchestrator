@@ -1,4 +1,4 @@
-# noseq B105
+# nosec B105
 # https://docs.openwebui.com/api/#adding-files-to-knowledge-collections
 import os
 

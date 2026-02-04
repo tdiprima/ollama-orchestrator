@@ -32,6 +32,6 @@ def upload_files_in_directory(token, directory_path):
 
 
 # TODO:
-token = ""  # noseq B105
+token = ""  # nosec B105
 directory_path = "/path/to/your/dir"
 upload_files_in_directory(token, directory_path)
