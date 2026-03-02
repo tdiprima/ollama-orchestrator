@@ -1,0 +1,141 @@
+2026-02-17 14:55:10.411 | INFO     | __main__:<module>:56 - Update Scheduler started
+2026-02-17 23:30:34.341 | INFO     | __main__:run_update_script:13 - Starting update_rhel update process
+2026-02-17 23:30:38.100 | INFO     | __main__:run_update_script:22 - Update command completed with exit code: 0
+2026-02-17 23:30:38.100 | INFO     | __main__:run_update_script:25 - Update output:
+2026-02-17 23:30:38.100 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-17 23:30:38.100 | INFO     | __main__:run_update_script:27 -   Zabbix_agent_for_RHEL                            70 kB/s | 1.5 kB     00:00    
+2026-02-17 23:30:38.100 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - AppStre  68 kB/s | 4.5 kB     00:00    
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - BaseOS   67 kB/s | 4.1 kB     00:00    
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Last metadata expiration check: 0:00:01 ago on Tue 17 Feb 2026 11:30:35 PM EST.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   58 files removed
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   All good.
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:27 -   System update completed successfully!
+2026-02-17 23:30:38.101 | INFO     | __main__:run_update_script:40 - Update completed successfully
+2026-02-18 23:30:42.189 | INFO     | __main__:run_update_script:13 - Starting update_rhel update process
+2026-02-18 23:30:46.040 | INFO     | __main__:run_update_script:22 - Update command completed with exit code: 0
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:25 - Update output:
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Zabbix_agent_for_RHEL                            67 kB/s | 1.5 kB     00:00    
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - AppStre  70 kB/s | 4.5 kB     00:00    
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - BaseOS   62 kB/s | 4.1 kB     00:00    
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Last metadata expiration check: 0:00:01 ago on Wed 18 Feb 2026 11:30:43 PM EST.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   58 files removed
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   All good.
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:27 -   System update completed successfully!
+2026-02-18 23:30:46.041 | INFO     | __main__:run_update_script:40 - Update completed successfully
+2026-02-19 23:30:52.373 | INFO     | __main__:run_update_script:13 - Starting update_rhel update process
+2026-02-19 23:30:56.157 | INFO     | __main__:run_update_script:22 - Update command completed with exit code: 0
+2026-02-19 23:30:56.157 | INFO     | __main__:run_update_script:25 - Update output:
+2026-02-19 23:30:56.157 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-19 23:30:56.157 | INFO     | __main__:run_update_script:27 -   Zabbix_agent_for_RHEL                            65 kB/s | 1.5 kB     00:00    
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - AppStre  71 kB/s | 4.5 kB     00:00    
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - BaseOS   63 kB/s | 4.1 kB     00:00    
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Last metadata expiration check: 0:00:01 ago on Thu 19 Feb 2026 11:30:53 PM EST.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   58 files removed
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   All good.
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:27 -   System update completed successfully!
+2026-02-19 23:30:56.158 | INFO     | __main__:run_update_script:40 - Update completed successfully
+2026-02-20 23:30:15.650 | INFO     | __main__:run_update_script:13 - Starting update_rhel update process
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:22 - Update command completed with exit code: 0
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:25 - Update output:
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:27 -   Zabbix_agent_for_RHEL                            69 kB/s | 1.5 kB     00:00    
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - AppStre  71 kB/s | 4.5 kB     00:00    
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - BaseOS   69 kB/s | 4.1 kB     00:00    
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-20 23:30:19.564 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   Last metadata expiration check: 0:00:01 ago on Fri 20 Feb 2026 11:30:16 PM EST.
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   58 files removed
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   All good.
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:27 -   System update completed successfully!
+2026-02-20 23:30:19.565 | INFO     | __main__:run_update_script:40 - Update completed successfully
+2026-02-21 23:30:34.037 | INFO     | __main__:run_update_script:13 - Starting update_rhel update process
+2026-02-21 23:30:37.911 | INFO     | __main__:run_update_script:22 - Update command completed with exit code: 0
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:25 - Update output:
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Zabbix_agent_for_RHEL                            29 kB/s | 1.5 kB     00:00    
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - AppStre  68 kB/s | 4.5 kB     00:00    
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - BaseOS   62 kB/s | 4.1 kB     00:00    
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Last metadata expiration check: 0:00:01 ago on Sat 21 Feb 2026 11:30:35 PM EST.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   58 files removed
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   All good.
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:27 -   System update completed successfully!
+2026-02-21 23:30:37.912 | INFO     | __main__:run_update_script:40 - Update completed successfully
+2026-02-22 23:30:54.790 | INFO     | __main__:run_update_script:13 - Starting update_rhel update process
+2026-02-22 23:30:58.532 | INFO     | __main__:run_update_script:22 - Update command completed with exit code: 0
+2026-02-22 23:30:58.532 | INFO     | __main__:run_update_script:25 - Update output:
+2026-02-22 23:30:58.532 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-22 23:30:58.532 | INFO     | __main__:run_update_script:27 -   Zabbix_agent_for_RHEL                            69 kB/s | 1.5 kB     00:00    
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - AppStre  72 kB/s | 4.5 kB     00:00    
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - BaseOS   69 kB/s | 4.1 kB     00:00    
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Last metadata expiration check: 0:00:02 ago on Sun 22 Feb 2026 11:30:55 PM EST.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   58 files removed
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   All good.
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:27 -   System update completed successfully!
+2026-02-22 23:30:58.533 | INFO     | __main__:run_update_script:40 - Update completed successfully
+2026-02-23 23:30:03.079 | INFO     | __main__:run_update_script:13 - Starting update_rhel update process
+2026-02-23 23:30:06.838 | INFO     | __main__:run_update_script:22 - Update command completed with exit code: 0
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:25 - Update output:
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Zabbix_agent_for_RHEL                            71 kB/s | 1.5 kB     00:00    
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - AppStre  74 kB/s | 4.5 kB     00:00    
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Red Hat Enterprise Linux 9 for x86_64 - BaseOS   70 kB/s | 4.1 kB     00:00    
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Last metadata expiration check: 0:00:01 ago on Mon 23 Feb 2026 11:30:04 PM EST.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Dependencies resolved.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Nothing to do.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Complete!
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   Updating Subscription Management repositories.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   58 files removed
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   All good.
+2026-02-23 23:30:06.839 | INFO     | __main__:run_update_script:27 -   System update completed successfully!
+2026-02-23 23:30:06.840 | INFO     | __main__:run_update_script:40 - Update completed successfully

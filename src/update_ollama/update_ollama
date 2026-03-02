@@ -1,0 +1,69 @@
+#!/bin/bash
+# ============================================================
+# update_ollama - Update Ollama, configure, and restart service
+# Author: tdiprima
+#
+# PURPOSE:  Runs as a cron job Mon/Wed/Fri at 15:00.
+# SECURITY: This script runs as root (via sudoers).
+#           No passwords are hard-coded anywhere.
+#           No "sudo" calls needed inside this script.
+# SETUP:    Run setup_ollama_sudo.sh once to allow
+#           passwordless execution of THIS script only.
+# ============================================================
+
+set -euo pipefail
+
+OLLAMA_HOST_VALUE="OLLAMA_HOST=0.0.0.0:11434"
+SERVICE_FILE="/etc/systemd/system/ollama.service"
+LOG_TAG="update_ollama"
+
+# ------ One function per task ------
+
+log_msg() {
+    # Prints to both terminal and syslog (handy for cron debugging)
+    echo "$1"
+    logger -t "$LOG_TAG" "$1"
+}
+
+install_latest_ollama() {
+    log_msg "Downloading and installing latest Ollama..."
+    curl -fsSL https://ollama.com/install.sh | sh
+    log_msg "Installed: $(ollama --version)"
+}
+
+ensure_host_config() {
+    # Make sure the OLLAMA_HOST environment line is in the service file
+    if ! grep -q "Environment=\"$OLLAMA_HOST_VALUE\"" "$SERVICE_FILE"; then
+        log_msg "Adding OLLAMA_HOST to service file..."
+        sed -i "/\[Service\]/a Environment=\"$OLLAMA_HOST_VALUE\"" "$SERVICE_FILE"
+    else
+        log_msg "OLLAMA_HOST already configured."
+    fi
+}
+
+restart_service() {
+    log_msg "Reloading systemd and restarting Ollama..."
+    systemctl daemon-reload
+    systemctl restart ollama.service
+    sleep 5
+    # systemctl status ollama.service --no-pager
+    log_msg "Service restarted."
+}
+
+verify_connection() {
+    log_msg "Testing Ollama API..."
+    if curl -sf http://0.0.0.0:11434/api/version; then
+        log_msg "Ollama is responding."
+    else
+        log_msg "WARNING: Ollama did not respond on port 11434."
+    fi
+}
+
+# ------ Main ------
+
+log_msg "=== Ollama update started ==="
+install_latest_ollama
+ensure_host_config
+restart_service
+verify_connection
+log_msg "=== Ollama update finished ==="
