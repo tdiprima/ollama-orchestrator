@@ -10,6 +10,7 @@
 # SETUP:    Run setup_ollama_sudo.sh once to allow
 #           passwordless execution of THIS script only.
 # ============================================================
+# journalctl -t "update_ollama"
 
 set -euo pipefail
 
