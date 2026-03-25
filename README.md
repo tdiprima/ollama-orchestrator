@@ -68,7 +68,7 @@ Times the response and prints wall-clock, user, and sys CPU time.
 
 ### Upload files to Open WebUI
 
-```python
+```sh
 # Set token and directory_path in upload_files.py, then run
 python src/upload_files.py
 ```
@@ -77,7 +77,7 @@ Uploads every file in the target directory to the Open WebUI `/api/v1/files/` en
 
 ### Add uploaded files to a knowledge collection
 
-```python
+```sh
 # Set token, knowledge_id, and directory_path in collection.py, then run
 python src/collection.py
 ```
