@@ -10,7 +10,7 @@ Every time: pull the models, restart the service, re-wire the UI, poke the API t
 
 Each script owns exactly one job. Run the one you need, skip the ones you don't. The update script runs on a cron schedule so Ollama stays current without you touching it. The Docker scripts wire Open WebUI and its pipelines container to your host Ollama instance with the right flags the first time. The Python utilities talk to the Open WebUI API directly for bulk file uploads and knowledge collection management.
 
-## Concrete example: automated Ollama updates on Linux
+## Example: automated Ollama updates on Linux
 
 ```bash
 # One-time setup — grants passwordless sudo for the update script only,
