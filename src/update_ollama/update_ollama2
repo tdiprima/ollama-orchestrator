@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================
-# update_ollama1 - Update Ollama, configure models path, restart service
+# update_ollama2 - Update Ollama, configure models path, restart service
 # Author: tdiprima
 #
 # PURPOSE:  Ensures OLLAMA_MODELS=/home/ollama is set in the
@@ -11,14 +11,18 @@
 # SETUP:    Run setup_ollama_sudo.sh once to allow
 #           passwordless execution of THIS script only.
 # ============================================================
-# journalctl -t "update_ollama1"
+# journalctl -t "update_ollama2"
 
-set -euo pipefail
+set -eE
+
+trap 'logger -t update_ollama2 "=== Ollama update FAILED at line $LINENO (exit $?) ==="' ERR
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 OLLAMA_MODELS_VALUE='OLLAMA_MODELS=/home/ollama'
 OLLAMA_HOST_VALUE='OLLAMA_HOST=0.0.0.0:11434'
 SERVICE_FILE="/etc/systemd/system/ollama.service"
-LOG_TAG="update_ollama1"
+LOG_TAG="update_ollama2"
 
 # ------ One function per task ------
 
@@ -30,8 +34,8 @@ log_msg() {
 
 install_latest_ollama() {
     log_msg "Downloading and installing latest Ollama..."
-    curl -fsSL https://ollama.com/install.sh | sh
-    log_msg "Installed: $(ollama --version)"
+    timeout --kill-after=30 600 bash -c 'curl -fsSL https://ollama.com/install.sh | sh'
+    log_msg "Installed: $(ollama --version 2>/dev/null | head -1)"
 }
 
 ensure_env_config() {
